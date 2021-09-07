@@ -6,30 +6,32 @@ public class WhatToDo {
         ToDoList todo = new ToDoList();
 
         // Add some tasks
-        todo.addTask("Buy milk");
-        todo.addTask("Buy eggs");
-        todo.addTask("Buy bread");
-        todo.addTask("Buy cheese");
-        todo.addTask("Buy butter");
-        todo.addTask("Buy jam");
+        todo.addTask("Make A ToDoList Class");
+        todo.addTask("Make it add items");
+        todo.addTask("Make it delete items");
+        todo.addTask("Delete items by name");
+        todo.addTask("Drink a cold one");
+        todo.addTask("Code some more");
 
-        // Print the list
+        // Print the list 
         System.out.println(todo.toString());
 
-        // Delete the first task
-        todo.deleteTask(0);
+        // Delete the first 3 tasks
+        for (int i = 0; i < 3; i++) {
+            todo.deleteTaskNumber(0);
+        }
 
         // Print the list
         System.out.println(todo.toString());
 
         // Delete the last task
-        todo.deleteTask(todo.getSize() - 1);
+        todo.deleteTaskNumber(todo.getSize() - 1);
 
         // Print the list
         System.out.println(todo.toString());
     
-        // Remove buy cheese task
-        todo.removeTask("Buy cheese");
+        // Delete buy cheese task
+        todo.deleteTaskName("Delete items by name");
 
         // Print the list
         System.out.println(todo.toString());

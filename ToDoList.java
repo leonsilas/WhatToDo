@@ -13,19 +13,19 @@ public class ToDoList {
         tasks.add(task);
     }
 
-    // Removes a task from the list by name
-    public void removeTask(String task) {
+    // Delete a task from the list by name
+    public void deleteTaskName(String task) {
         tasks.remove(task);
     }
 
     // Delete a task from the list by index
-    public void deleteTask(int index) {
+    public void deleteTaskNumber(int index) {
         tasks.remove(index);
     }
 
     // Returns list of tasks
     public String toString() {
-        String result = "";
+        String result = "To Do\n";
         for (String task : tasks) {
             result += task + "\n";
         }
